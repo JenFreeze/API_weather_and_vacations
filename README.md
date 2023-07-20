@@ -1,9 +1,11 @@
-# python-api-challenge
-# Module 6 - APIs
-### In this challenge, we used Python requests and APIs to determine weather trends as we get closer to the equator.  We then took those findings to determine the ideal vacation location based on weather alone.
-#
+# Using APIs to Identify Weather Trends
+#### Skills Used: API data pulls, Python, Pandas, Matplotlib, Linear Regression
+#### Data Source: Open Weather Map API, Geoapify API
+## Overview
+In this challenge, we used Python requests and APIs to determine weather trends as we get closer to the equator.  We then took those findings to determine the ideal vacation location based on weather alone.
 
-# WeatherPy
+
+## Weather Analysis
 First we looked at the weather trends in various different cities around the world.
 
 - In our first step, we generated a list of cities to perform our analysis. 
@@ -13,8 +15,9 @@ First we looked at the weather trends in various different cities around the wor
 
 Based on our analysis, the strongest correlations are between latitude and temperature - as you get closer to the equator (a latitude of zero), the greater the temperature. 
 There were minimal correlation between latitude and the other variables. 
-#
-# VacationPy
+![plot](WeatherPy/output_data/Fig1.png)
+
+## Vacation Analysis
 We then used our city data to determine the most ideal vacation spot based on weather conditions.
 
 - We created a map of all of the cities in our original list, using humidiity as the size indicator.
@@ -25,3 +28,11 @@ We then used our city data to determine the most ideal vacation spot based on we
 - This criteria gave us a final list of 20 cities.
 - For these 20 cities, we then used the Geoapify API to pull hotel data for each city, trying to find the closest hotel to each city provided.
 - We then regenerated our map to include only these 20 cities and to include the hotel information for each location.
+
+![plot](WeatherPy/output_data/vacation_map.png)
+
+## Conclusion
+Based on our final analysis, there are 14 cities that meet our weather parameters and have a hotel nearby. These cities include:
+- Saint George, Utah, United States
+- Puerto Penasco, Mexico
+- Abu Dhabi, United Arab Emirates
