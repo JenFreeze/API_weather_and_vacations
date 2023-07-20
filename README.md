@@ -15,6 +15,7 @@ First we looked at the weather trends in various different cities around the wor
 
 Based on our analysis, the strongest correlations are between latitude and temperature - as you get closer to the equator (a latitude of zero), the greater the temperature. 
 There were minimal correlation between latitude and the other variables. 
+
 ![plot](WeatherPy/output_data/Fig1.png)
 
 ## Vacation Analysis
